@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+}
+nav{
+  height: 30px;
+  display: flex;
+  background-color: white;
+  padding: 15px 26px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  max-width: 100px;
+}
+.main{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+ .main-grid{
+  max-width: 400px;
+  align-self: center;
+}
+
+.main-content{
+  font-style: normal;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+.main-content > h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  line-height: 150%;
+}
+.main-content > p{
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grey{
+  color:#918E9B;  ;
+}
+.card{
+  position: absolute;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 175px;
+  font-size: 12px;
+  line-height: 20px;
+  top: 90%;
+  left: 5%;
+  align-content: start;
+}
+.card-star{
+  height: 15px;
+}
+.card-kat{
+  border-radius: 10px;
+  width: 100%;
+}
+.card-rev{
+  display: flex;
+}
