@@ -1,19 +1,21 @@
 import React from "react";
-import star from "../img/Star.png"
 
-export default function Card(props){
-   // console.log(props)
-    return(
+export default function Card(props) {
+    let btxt
+    if(props.openSpots===0) btxt="SOLD OUT";
+    else if(props.location==="Online") btxt="Online";
+    return (
         <div className="card">
-            <img src={props.img} className="card-kat"/>
-            <div className="card-rev">
-                <img src={star} className="card-star"/>
-                <span className="rat">{props.rat}</span>
-                <span className="grey">{props.rc}</span>
-                <span className="grey">{props.cou}</span>
+        {btxt && <div className="card-b">{btxt}</div>}
+            <img src={props.coverImg} className="card--image" />
+            <div className="card--stats">
+                <img src="img/Star.png" className="card--star" />
+                <span>{props.stats.rating}</span>
+                <span className="grey">({props.stats.reviewCount}) • </span>
+                <span className="grey">{props.location}</span>
             </div>
-            <p>{props.title}</p>
-            <p><strong>From ${props.price}</strong>/ person</p>
+            <p className="card--title">{props.title}</p>
+            <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }

@@ -1,10 +1,9 @@
 import React from "react";
-import grid from "../img/Group.jpg"
 
 export default function Main(){
     return(
         <section className="main">
-            <img src={grid} className="main-grid" />
+            <img src="img/Group.jpg" className="main-grid" />
             <div className="main-content">
                 <h1>Online Experiences</h1>
                 <p>Join unique interactive activities led by 
